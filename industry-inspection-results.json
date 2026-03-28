@@ -1,0 +1,4819 @@
+[
+  {
+    "docId": "0mCs9k8ZjhiwWtpgDNuf",
+    "name": "Juniper Hotels Ltd",
+    "companyCode": "1284687",
+    "nseCode": "JUNIPER",
+    "bseCode": "544129",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 9,
+    "processedConcalls": 7,
+    "errorConcalls": 2,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Jun2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 1,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 2,
+        "quarter": "Nov2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 3,
+        "quarter": "Aug2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 4,
+        "quarter": "Jun2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 5,
+        "quarter": "May2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 6,
+        "quarter": "Aug2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "The company demonstrated robust performance in the latest quarter, driven by strong demand across both leisure and business segments, particularly in ..."
+      },
+      {
+        "index": 7,
+        "quarter": "Nov2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the specified format.\n..."
+      },
+      {
+        "index": 8,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "38Tp2JvEiWhkqUVZ2vBv",
+    "name": "Robust Hotels Ltd",
+    "companyCode": "1284357",
+    "nseCode": "RHL",
+    "bseCode": "543901",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "3pcPVrK9xWh9LayeEyTv",
+    "name": "Sayaji Hotels (Pune) Ltd",
+    "companyCode": "1284656",
+    "nseCode": null,
+    "bseCode": "544090",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "40cvRSRK6qCS56Z5qoCn",
+    "name": "Jindal Hotels Ltd",
+    "companyCode": "1621",
+    "nseCode": null,
+    "bseCode": "507981",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "4FL3dpwl5k4jOBg0NnaZ",
+    "name": "ITC Hotels Ltd",
+    "companyCode": "1285312",
+    "nseCode": "ITCHOTELS",
+    "bseCode": "544325",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 4,
+    "processedConcalls": 0,
+    "errorConcalls": 4,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "May2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 1,
+        "quarter": "Jan2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Oct2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Jul2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "4HI2wtfgqMZ0TuLXbWei",
+    "name": "Valor Estate Ltd",
+    "companyCode": "755",
+    "nseCode": "DBREALTY",
+    "bseCode": "533160",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 4,
+    "processedConcalls": 0,
+    "errorConcalls": 4,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Feb2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 1,
+        "quarter": "Nov2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Mar2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Aug2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "4vRCaAP96kB5tTk5oBhN",
+    "name": "TajGVK Hotels & Resorts Ltd",
+    "companyCode": "3341",
+    "nseCode": "TAJGVK",
+    "bseCode": "532390",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "52TeFK8MvrRfXPKCFlwe",
+    "name": "Gujarat Hotels Ltd",
+    "companyCode": "1235",
+    "nseCode": null,
+    "bseCode": "507960",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "53lay4WjfVzxI5lFce3u",
+    "name": "Advent Hotels International Ltd",
+    "companyCode": "1285770",
+    "nseCode": "ADVENTHTL",
+    "bseCode": "544446",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "54SbzRKpUBpwr04BSbTR",
+    "name": "Aruna Hotels Ltd",
+    "companyCode": "1267549",
+    "nseCode": null,
+    "bseCode": "500016",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "5NmlaXBVNPTgVvim2T1Q",
+    "name": "Mac Hotels Ltd",
+    "companyCode": "1274567",
+    "nseCode": null,
+    "bseCode": "541973",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "68LdVWStZvscLJc14BRj",
+    "name": "Radford Global Ltd",
+    "companyCode": "2586",
+    "nseCode": null,
+    "bseCode": null,
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "6bT8bWZ6wD6s5pkwQvQr",
+    "name": "Oriental Hotels Ltd",
+    "companyCode": "2360",
+    "nseCode": "ORIENTHOT",
+    "bseCode": "500314",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "6mSmprPuLupqNQyEZKHB",
+    "name": "Leela Palaces Hotels & Resorts Ltd",
+    "companyCode": "1285468",
+    "nseCode": "THELEELA",
+    "bseCode": "544408",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 3,
+    "processedConcalls": 3,
+    "errorConcalls": 0,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Jan2026",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 1,
+        "quarter": "Oct2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 2,
+        "quarter": "Jul2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      }
+    ]
+  },
+  {
+    "docId": "6mUUvo59O3k7P8787rYl",
+    "name": "Asian Hotels (West) Ltd",
+    "companyCode": "293",
+    "nseCode": "AHLWEST",
+    "bseCode": "533221",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "8qWq0kjc8zbmlxCxplyJ",
+    "name": "Saj Hotels Ltd",
+    "companyCode": "1285012",
+    "nseCode": "SAJHOTELS",
+    "bseCode": null,
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "9QQR8b5MZOTLCsBkvOca",
+    "name": "Khyati Multimedia Entertainment Ltd",
+    "companyCode": "1771",
+    "nseCode": null,
+    "bseCode": "531692",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "D76BLmuC6bRYv0PTEB1T",
+    "name": "TGB Banquets & Hotels Ltd",
+    "companyCode": "448",
+    "nseCode": "TGBHOTELS",
+    "bseCode": "532845",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "DYpkXzdXW77iaPGdCAKD",
+    "name": "Dhanada Corporation Ltd",
+    "companyCode": "804",
+    "nseCode": null,
+    "bseCode": "531198",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "DxzdLRMizl7t9DdITYsy",
+    "name": "Woodsvilla Ltd",
+    "companyCode": "3768",
+    "nseCode": null,
+    "bseCode": "526959",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "FTGGbIIieUWQYNTkpizY",
+    "name": "Benares Hotels Ltd",
+    "companyCode": "424",
+    "nseCode": null,
+    "bseCode": "509438",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 5,
+    "processedConcalls": 0,
+    "errorConcalls": 5,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Apr2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 1,
+        "quarter": "Apr2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Jan2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Nov2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 4,
+        "quarter": "Jul2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "HXt9OlVcEfCg735O6epw",
+    "name": "Sanghvi Brands Ltd",
+    "companyCode": "1274199",
+    "nseCode": null,
+    "bseCode": "540782",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 5,
+    "processedConcalls": 0,
+    "errorConcalls": 5,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Feb2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 1,
+        "quarter": "Sep2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Aug2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Jan2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 4,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "LKOrtzrRkEEoEajQdvrU",
+    "name": "Kamat Hotels (India) Ltd",
+    "companyCode": "1704",
+    "nseCode": "KAMATHOTEL",
+    "bseCode": "526668",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 14,
+    "processedConcalls": 9,
+    "errorConcalls": 6,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "May2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 1,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 2,
+        "quarter": "Dec2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Oct2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 4,
+        "quarter": "Aug2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "Failed to fetch PDF: Request failed with status code 404",
+        "summaryPreview": null
+      },
+      {
+        "index": 5,
+        "quarter": "May2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 6,
+        "quarter": "Feb2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 7,
+        "quarter": "Nov2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 8,
+        "quarter": "Aug2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 9,
+        "quarter": "May2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 10,
+        "quarter": "Feb2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 11,
+        "quarter": "Nov2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 12,
+        "quarter": "Aug2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the summary and markdown..."
+      },
+      {
+        "index": 13,
+        "quarter": "Feb2026",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      }
+    ]
+  },
+  {
+    "docId": "OCm8Ze9gKURjtwPV4SV3",
+    "name": "Velan Hotels Ltd",
+    "companyCode": "3627",
+    "nseCode": null,
+    "bseCode": "526755",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "OK4i0v9UWJ8vYT6TztBg",
+    "name": "Royal Orchid Hotels Ltd",
+    "companyCode": "2788",
+    "nseCode": "ROHLTD",
+    "bseCode": "532699",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 31,
+    "processedConcalls": 14,
+    "errorConcalls": 5,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Aug2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 1,
+        "quarter": "Jun2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 2,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 3,
+        "quarter": "Nov2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 4,
+        "quarter": "Aug2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 5,
+        "quarter": "Jun2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 6,
+        "quarter": "Feb2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 7,
+        "quarter": "Nov2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 8,
+        "quarter": "Aug2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 9,
+        "quarter": "Jun2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 10,
+        "quarter": "Feb2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 11,
+        "quarter": "Nov2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 12,
+        "quarter": "Aug2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 13,
+        "quarter": "Jun2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 14,
+        "quarter": "Feb2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 15,
+        "quarter": "Jul2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 16,
+        "quarter": "Feb2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 17,
+        "quarter": "Nov2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 18,
+        "quarter": "Aug2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 19,
+        "quarter": "May2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 20,
+        "quarter": "Feb2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 21,
+        "quarter": "Nov2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 22,
+        "quarter": "Jul2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 23,
+        "quarter": "May2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 24,
+        "quarter": "Feb2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 25,
+        "quarter": "Nov2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 26,
+        "quarter": "Aug2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 27,
+        "quarter": "May2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 28,
+        "quarter": "Nov2016",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 29,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 30,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "OVSxy5HRdBuutDS57107",
+    "name": "Jungle Camps India Ltd",
+    "companyCode": "1285181",
+    "nseCode": null,
+    "bseCode": "544304",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 3,
+    "processedConcalls": 1,
+    "errorConcalls": 2,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Mar2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 1,
+        "quarter": "Jan2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Sep2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "OhrJvk6WUuRGS4rJ6fAe",
+    "name": "Eco Hotels and Resorts Ltd",
+    "companyCode": "729818",
+    "nseCode": null,
+    "bseCode": "514402",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 3,
+    "processedConcalls": 0,
+    "errorConcalls": 3,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "May2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 1,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Sep2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "OjhP7Hpe9F8BX4TUCqcP",
+    "name": "Univa Foods Ltd",
+    "companyCode": "1369",
+    "nseCode": "UNIVAFOODS",
+    "bseCode": "526683",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "P0gWNRKx9YJgbrFora3J",
+    "name": "H. S. India Ltd",
+    "companyCode": "1268",
+    "nseCode": null,
+    "bseCode": "532145",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "QmhsM4N6ZysG4ZnrDhzo",
+    "name": "Savera Industries Ltd",
+    "companyCode": "2915",
+    "nseCode": null,
+    "bseCode": "512634",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "Qu4uyJgzcHdreefGaklb",
+    "name": "EIH Associated Hotels Ltd",
+    "companyCode": "890",
+    "nseCode": "EIHAHOTELS",
+    "bseCode": "523127",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 8,
+    "processedConcalls": 1,
+    "errorConcalls": 8,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "May2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the analysis in the requ..."
+      },
+      {
+        "index": 1,
+        "quarter": "Mar2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Nov2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Aug2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 4,
+        "quarter": "Jul2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 5,
+        "quarter": "Feb2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 6,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 7,
+        "quarter": "Aug2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "RUuasrQowoP0l4L1ESUY",
+    "name": "Debock Industries Ltd",
+    "companyCode": "1274361",
+    "nseCode": "DIL",
+    "bseCode": null,
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "SB0MiUAaRWKB5Z1uSOYE",
+    "name": "Best Eastern Hotels Ltd",
+    "companyCode": "434",
+    "nseCode": null,
+    "bseCode": "508664",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "VxZj93KeJfEL5WspNBZI",
+    "name": "Howard Hotels Ltd",
+    "companyCode": "1373",
+    "nseCode": null,
+    "bseCode": "526761",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "W3M6y7O26RKM1CoPbTGP",
+    "name": "Graviss Hospitality Ltd",
+    "companyCode": "1201",
+    "nseCode": null,
+    "bseCode": "509546",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "W4VFs4AdBmwMR8rpMooi",
+    "name": "Advani Hotels & Resorts (India) Ltd",
+    "companyCode": "80",
+    "nseCode": "ADVANIHOTR",
+    "bseCode": "523269",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "WNOcH6QmZk7543BFUd7l",
+    "name": "CHL Ltd",
+    "companyCode": "642",
+    "nseCode": null,
+    "bseCode": "532992",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "X3803wYfIWSWxS6Wte7n",
+    "name": "India Tourism Development Corporation Ltd",
+    "companyCode": "1431",
+    "nseCode": "ITDC",
+    "bseCode": "532189",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "XlnXUV9HGJRAiI8vmot2",
+    "name": "Valencia India Ltd",
+    "companyCode": "1285514",
+    "nseCode": null,
+    "bseCode": "544433",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "Y1LX5gTH3FhGVYNe3bAO",
+    "name": "Sayaji Hotels (Indore) Ltd",
+    "companyCode": "1284637",
+    "nseCode": null,
+    "bseCode": "544080",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "aGtedEIoK3elzhG6okIs",
+    "name": "Espire Hospitality Ltd",
+    "companyCode": "3736",
+    "nseCode": null,
+    "bseCode": "532016",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 2,
+    "processedConcalls": 0,
+    "errorConcalls": 2,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Mar2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 1,
+        "quarter": "Dec2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "aQu0Qa29uyVFxApan71b",
+    "name": "Samhi Hotels Ltd",
+    "companyCode": "1284485",
+    "nseCode": "SAMHI",
+    "bseCode": "543984",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 19,
+    "processedConcalls": 8,
+    "errorConcalls": 8,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Nov2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please paste the Hotels & Resorts Earnings Call Transcript here so I can begin the analysis...."
+      },
+      {
+        "index": 1,
+        "quarter": "Oct2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Sep2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please paste the Hotels & Resorts Earnings Call Transcript here for analysis. I am ready to process it according to your instructions...."
+      },
+      {
+        "index": 3,
+        "quarter": "Aug2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 4,
+        "quarter": "Jun2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "Failed to fetch PDF: stream has been aborted",
+        "summaryPreview": null
+      },
+      {
+        "index": 5,
+        "quarter": "May2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "Failed to fetch PDF: Request failed with status code 404",
+        "summaryPreview": null
+      },
+      {
+        "index": 6,
+        "quarter": "Apr2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 7,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the specified format.\n..."
+      },
+      {
+        "index": 8,
+        "quarter": "Dec2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please provide the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 9,
+        "quarter": "Nov2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please provide the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 10,
+        "quarter": "Sep2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 11,
+        "quarter": "Aug2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "Failed to fetch PDF: Request failed with status code 404",
+        "summaryPreview": null
+      },
+      {
+        "index": 12,
+        "quarter": "Jun2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the analysis in the requ..."
+      },
+      {
+        "index": 13,
+        "quarter": "May2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "Failed to fetch PDF: Request failed with status code 404",
+        "summaryPreview": null
+      },
+      {
+        "index": 14,
+        "quarter": "Feb2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please provide the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 15,
+        "quarter": "Nov2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. Once you provide the transcript, I will gener..."
+      },
+      {
+        "index": 16,
+        "quarter": "Oct2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 17,
+        "quarter": "Jan2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 18,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "bJfDG8PRzE15jl210Xwn",
+    "name": "Polo Hotels Ltd",
+    "companyCode": "2505",
+    "nseCode": null,
+    "bseCode": "526687",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "dIsLruYe1poIbPfp15DB",
+    "name": "Emerald Leisures Ltd",
+    "companyCode": "221",
+    "nseCode": null,
+    "bseCode": "507265",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "f1xQu29JerJa3PUFmGxB",
+    "name": "Roopshri Resorts Ltd",
+    "companyCode": "1274644",
+    "nseCode": null,
+    "bseCode": "542599",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "f6smevNdnZnudCq3wLLM",
+    "name": "EIH Ltd",
+    "companyCode": "891",
+    "nseCode": "EIHOTEL",
+    "bseCode": "500840",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 28,
+    "processedConcalls": 11,
+    "errorConcalls": 7,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "May2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 1,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 2,
+        "quarter": "Nov2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 3,
+        "quarter": "Aug2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 4,
+        "quarter": "Jun2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 5,
+        "quarter": "Feb2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 6,
+        "quarter": "Nov2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 7,
+        "quarter": "Aug2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 8,
+        "quarter": "Jun2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 9,
+        "quarter": "May2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 10,
+        "quarter": "Feb2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 11,
+        "quarter": "Nov2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 12,
+        "quarter": "Jul2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 13,
+        "quarter": "May2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 14,
+        "quarter": "Feb2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 15,
+        "quarter": "Nov2021",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. Once you provide the transcript, I will gener..."
+      },
+      {
+        "index": 16,
+        "quarter": "Jul2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 17,
+        "quarter": "May2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 18,
+        "quarter": "Feb2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 19,
+        "quarter": "Nov2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 20,
+        "quarter": "Aug2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 21,
+        "quarter": "Jun2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 22,
+        "quarter": "Jan2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 23,
+        "quarter": "Nov2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 24,
+        "quarter": "Aug2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 25,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 26,
+        "quarter": "Aug2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 27,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "f8VrCUKDfNW6LsD5UdXz",
+    "name": "Sinclairs Hotels Ltd",
+    "companyCode": "3082",
+    "nseCode": "SINCLAIR",
+    "bseCode": "523023",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 17,
+    "processedConcalls": 0,
+    "errorConcalls": 16,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "May2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 1,
+        "quarter": "Nov2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "May2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Feb2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 4,
+        "quarter": "Nov2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 5,
+        "quarter": "Aug2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 6,
+        "quarter": "Jun2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 7,
+        "quarter": "Feb2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 8,
+        "quarter": "Nov2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 9,
+        "quarter": "Aug2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 10,
+        "quarter": "Feb2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 11,
+        "quarter": "Dec2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 12,
+        "quarter": "Jul2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 13,
+        "quarter": "Mar2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 14,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 15,
+        "quarter": "Aug2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 16,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "fqHmc5IDooYkvqhzWsGk",
+    "name": "Chalet Hotels Ltd",
+    "companyCode": "1274626",
+    "nseCode": "CHALET",
+    "bseCode": "542399",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 37,
+    "processedConcalls": 12,
+    "errorConcalls": 6,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "May2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 1,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 2,
+        "quarter": "Nov2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 3,
+        "quarter": "Oct2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 4,
+        "quarter": "Aug2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 5,
+        "quarter": "Jul2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 6,
+        "quarter": "Jun2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 7,
+        "quarter": "May2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 8,
+        "quarter": "Feb2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 9,
+        "quarter": "Oct2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 10,
+        "quarter": "Aug2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 11,
+        "quarter": "Jul2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 12,
+        "quarter": "May2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 13,
+        "quarter": "Jan2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 14,
+        "quarter": "Oct2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please provide the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 15,
+        "quarter": "Aug2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the analysis in the requ..."
+      },
+      {
+        "index": 16,
+        "quarter": "May2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 17,
+        "quarter": "Feb2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 18,
+        "quarter": "Nov2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 19,
+        "quarter": "Aug2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 20,
+        "quarter": "May2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 21,
+        "quarter": "Mar2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 22,
+        "quarter": "Feb2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 23,
+        "quarter": "Nov2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 24,
+        "quarter": "Aug2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 25,
+        "quarter": "Jun2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 26,
+        "quarter": "Mar2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 27,
+        "quarter": "Feb2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 28,
+        "quarter": "Nov2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 29,
+        "quarter": "Sep2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 30,
+        "quarter": "Aug2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 31,
+        "quarter": "May2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 32,
+        "quarter": "Dec2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 33,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 34,
+        "quarter": "Aug2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 35,
+        "quarter": "Jul2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 36,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "fuZBAp296VRGZc3YCRog",
+    "name": "Ras Resorts & Apart Hotels Ltd",
+    "companyCode": "2681",
+    "nseCode": null,
+    "bseCode": "507966",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "grh0FdN8SdJWEgBvVhXa",
+    "name": "HLV Ltd",
+    "companyCode": "1368",
+    "nseCode": "HLVLTD",
+    "bseCode": "500193",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 1,
+    "processedConcalls": 0,
+    "errorConcalls": 1,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Jul2015",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "hunHJYsyAJDrlOSjB70d",
+    "name": "Asian Hotels (East) Ltd",
+    "companyCode": "291",
+    "nseCode": "AHLEAST",
+    "bseCode": "533227",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "hzXtj0tPRCvlTyeuLSX7",
+    "name": "Cindrella Hotels Ltd",
+    "companyCode": "657",
+    "nseCode": null,
+    "bseCode": "526373",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "iCrmsqsF1niBJBdpjxJQ",
+    "name": "Mac Charles (India) Ltd",
+    "companyCode": "1937",
+    "nseCode": null,
+    "bseCode": "507836",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "jYMwXyLxI9YJspZENu02",
+    "name": "Royale Manor Hotels & Industries Ltd",
+    "companyCode": "2789",
+    "nseCode": null,
+    "bseCode": "526640",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "jhIjEW1yiGTiU3x6Z3gT",
+    "name": "Suba Hotels Ltd",
+    "companyCode": "1285715",
+    "nseCode": "SUBAHOTELS",
+    "bseCode": null,
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 1,
+    "processedConcalls": 1,
+    "errorConcalls": 0,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Jan2026",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the analysis in the requ..."
+      }
+    ]
+  },
+  {
+    "docId": "k9MMKg3TLb3pPZvimmPZ",
+    "name": "Apollo Sindoori Hotels Ltd",
+    "companyCode": "1270744",
+    "nseCode": "APOLSINHOT",
+    "bseCode": null,
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 5,
+    "processedConcalls": 0,
+    "errorConcalls": 5,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Sep2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 1,
+        "quarter": "Sep2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Sep2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 4,
+        "quarter": "Sep2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "mQX0EDiCoqbkWqvTqCiD",
+    "name": "KDJ Holidayscapes & Resorts Ltd",
+    "companyCode": "3512",
+    "nseCode": null,
+    "bseCode": "530701",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "njbvr0yBI1WoYttyIw4a",
+    "name": "Sayaji Hotels Ltd",
+    "companyCode": "2918",
+    "nseCode": null,
+    "bseCode": "523710",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "pSwkdrsqLO4MkoRHaHAH",
+    "name": "Goel Food Products Ltd",
+    "companyCode": "1275239",
+    "nseCode": null,
+    "bseCode": "543538",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "piINBi6MeZL0efY4gSad",
+    "name": "Lemon Tree Hotels Ltd",
+    "companyCode": "1274323",
+    "nseCode": "LEMONTREE",
+    "bseCode": "541233",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 39,
+    "processedConcalls": 13,
+    "errorConcalls": 5,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Jun2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 1,
+        "quarter": "Mar2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 3,
+        "quarter": "Nov2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 4,
+        "quarter": "Aug2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 5,
+        "quarter": "Jun2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 6,
+        "quarter": "Feb2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 7,
+        "quarter": "Nov2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 8,
+        "quarter": "Aug2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 9,
+        "quarter": "Jun2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 10,
+        "quarter": "Feb2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 11,
+        "quarter": "Nov2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 12,
+        "quarter": "Sep2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 13,
+        "quarter": "Aug2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please provide the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 14,
+        "quarter": "Jun2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please provide the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 15,
+        "quarter": "Apr2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 16,
+        "quarter": "Feb2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 17,
+        "quarter": "Dec2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 18,
+        "quarter": "Nov2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 19,
+        "quarter": "Aug2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 20,
+        "quarter": "Jun2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 21,
+        "quarter": "Feb2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 22,
+        "quarter": "Dec2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 23,
+        "quarter": "Nov2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 24,
+        "quarter": "Aug2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 25,
+        "quarter": "Jun2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 26,
+        "quarter": "Feb2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 27,
+        "quarter": "Nov2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 28,
+        "quarter": "Sep2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 29,
+        "quarter": "Aug2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 30,
+        "quarter": "May2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 31,
+        "quarter": "Feb2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 32,
+        "quarter": "Nov2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 33,
+        "quarter": "Aug2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 34,
+        "quarter": "Jun2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 35,
+        "quarter": "Jan2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 36,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 37,
+        "quarter": "Aug2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 38,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "pv7fSX18htawY5zFrvo3",
+    "name": "Brigade Hotel Ventures Ltd",
+    "companyCode": "1285560",
+    "nseCode": "BRIGHOTEL",
+    "bseCode": "544457",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 4,
+    "processedConcalls": 2,
+    "errorConcalls": 2,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Aug2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 1,
+        "quarter": "Oct2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the summary and markdown..."
+      },
+      {
+        "index": 2,
+        "quarter": "Jan2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "q1fodB3vUPKWlZGGWe2q",
+    "name": "Sterling Green Woods Ltd",
+    "companyCode": "3202",
+    "nseCode": null,
+    "bseCode": "526500",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "r3VOi20MVpIh4t4czEO1",
+    "name": "Apeejay Surrendra Park Hotels Ltd",
+    "companyCode": "1284660",
+    "nseCode": "PARKHOTELS",
+    "bseCode": "544111",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 9,
+    "processedConcalls": 9,
+    "errorConcalls": 2,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Jun2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please paste the Hotels & Resorts Earnings Call Transcript where indicated. I need the actual transcript content to perform the analysis and generate ..."
+      },
+      {
+        "index": 1,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "`, `..."
+      },
+      {
+        "index": 2,
+        "quarter": "Nov2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please paste the Hotels & Resorts Earnings Call Transcript where indicated. I am ready to analyze it according to your instructions once the content i..."
+      },
+      {
+        "index": 3,
+        "quarter": "Aug2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please paste the Hotels & Resorts Earnings Call Transcript where indicated. Once you provide the transcript, I will analyze it according to your instr..."
+      },
+      {
+        "index": 4,
+        "quarter": "Jun2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "The company reported a strong quarter, driven by robust demand across leisure and a recovering business and MICE segment. Key performance indicators s..."
+      },
+      {
+        "index": 5,
+        "quarter": "Mar2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "The company demonstrated strong performance in the last quarter and fiscal year, driven by robust growth in key performance indicators. Occupancy rate..."
+      },
+      {
+        "index": 6,
+        "quarter": "Nov2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the summary and markdown..."
+      },
+      {
+        "index": 7,
+        "quarter": "Aug2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the summary and markdown..."
+      },
+      {
+        "index": 8,
+        "quarter": "Feb2026",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      }
+    ]
+  },
+  {
+    "docId": "s11DLgI9UR7HCl1mXq08",
+    "name": "U P Hotels Ltd",
+    "companyCode": "3517",
+    "nseCode": null,
+    "bseCode": "509960",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "seplGkyWOPA1VjTdvPMt",
+    "name": "Ventive Hospitality Ltd",
+    "companyCode": "1285201",
+    "nseCode": "VENTIVE",
+    "bseCode": "544321",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 6,
+    "processedConcalls": 5,
+    "errorConcalls": 3,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Aug2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 1,
+        "quarter": "Jul2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "May2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 3,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 4,
+        "quarter": "Nov2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 5,
+        "quarter": "Feb2026",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Okay, I'm ready. Please provide the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      }
+    ]
+  },
+  {
+    "docId": "tLoiUy0A096MKQqZb0t8",
+    "name": "Country Club Hospitality & Holidays Ltd",
+    "companyCode": "723",
+    "nseCode": "CCHHL",
+    "bseCode": "526550",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "tNKU2mj6nvQtkX5mKT3b",
+    "name": "Viceroy Hotels Ltd",
+    "companyCode": "3644",
+    "nseCode": "VHLTD",
+    "bseCode": "523796",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 6,
+    "processedConcalls": 3,
+    "errorConcalls": 3,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "May2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 1,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 2,
+        "quarter": "Nov2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Nov2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the analysis in the requ..."
+      },
+      {
+        "index": 4,
+        "quarter": "Aug2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 5,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "tSE0d3NxoOs8PWrlSQmg",
+    "name": "Indian Hotels Co Ltd",
+    "companyCode": "1443",
+    "nseCode": "INDHOTEL",
+    "bseCode": "500850",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 47,
+    "processedConcalls": 9,
+    "errorConcalls": 9,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Jun2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 1,
+        "quarter": "May2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 3,
+        "quarter": "Jan2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 4,
+        "quarter": "Dec2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 5,
+        "quarter": "Nov2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 6,
+        "quarter": "Sep2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 7,
+        "quarter": "Jul2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 8,
+        "quarter": "Jun2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 9,
+        "quarter": "Apr2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please paste the Hotels & Resorts Earnings Call Transcript where indicated. Once you provide the transcript, I will analyze it according to your instr..."
+      },
+      {
+        "index": 10,
+        "quarter": "Feb2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please paste the Hotels & Resorts Earnings Call Transcript where indicated. I am ready to analyze it according to your instructions once the content i..."
+      },
+      {
+        "index": 11,
+        "quarter": "Nov2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "[Please paste the Hotels & Resorts Earnings Call Transcript here for a comprehensive summary to be generated.]..."
+      },
+      {
+        "index": 12,
+        "quarter": "Oct2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 13,
+        "quarter": "Aug2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please paste the transcript. I will then provide the analysis in the request..."
+      },
+      {
+        "index": 14,
+        "quarter": "Jul2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 15,
+        "quarter": "May2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the analysis in the requ..."
+      },
+      {
+        "index": 16,
+        "quarter": "Apr2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 17,
+        "quarter": "Feb2023",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 18,
+        "quarter": "Nov2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 19,
+        "quarter": "Aug2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 20,
+        "quarter": "May2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 21,
+        "quarter": "Apr2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 22,
+        "quarter": "Feb2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 23,
+        "quarter": "Oct2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 24,
+        "quarter": "Aug2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 25,
+        "quarter": "Jul2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 26,
+        "quarter": "May2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 27,
+        "quarter": "Feb2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 28,
+        "quarter": "Nov2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 29,
+        "quarter": "Aug2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 30,
+        "quarter": "Jun2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 31,
+        "quarter": "Jan2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 32,
+        "quarter": "Nov2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 33,
+        "quarter": "Aug2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 34,
+        "quarter": "Apr2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 35,
+        "quarter": "Feb2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 36,
+        "quarter": "Nov2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 37,
+        "quarter": "Aug2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 38,
+        "quarter": "May2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 39,
+        "quarter": "Feb2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 40,
+        "quarter": "Aug2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 41,
+        "quarter": "Jan2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 42,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 43,
+        "quarter": "Sep2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 44,
+        "quarter": "Aug2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 45,
+        "quarter": "Jul2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 46,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "tkQ7Sbbl7V40rVrmlL5H",
+    "name": "Phoenix Township Ltd",
+    "companyCode": "826238",
+    "nseCode": null,
+    "bseCode": "537839",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "vVjXukC2MmRslJEjmQSN",
+    "name": "Reliable Ventures India Ltd",
+    "companyCode": "2720",
+    "nseCode": null,
+    "bseCode": "532124",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "woNPqp9o616r595QAkp6",
+    "name": "Silver Pearl Hospitality & Luxury Spaces Ltd",
+    "companyCode": "1275236",
+    "nseCode": null,
+    "bseCode": "543536",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "x741xSg3WtA8lVgnVyN3",
+    "name": "Mahindra Holidays & Resorts India Ltd",
+    "companyCode": "1976",
+    "nseCode": "MHRIL",
+    "bseCode": "533088",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 46,
+    "processedConcalls": 14,
+    "errorConcalls": 2,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "May2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 1,
+        "quarter": "Feb2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 2,
+        "quarter": "Oct2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 3,
+        "quarter": "Jul2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 4,
+        "quarter": "May2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 5,
+        "quarter": "Feb2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please paste the Hotels & Resorts Earnings Call Transcript where indicated. I am ready to analyze it according to your specified instructions and form..."
+      },
+      {
+        "index": 6,
+        "quarter": "Oct2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Transcript content is missing. Please provide the Hotels & Resorts Earnings Call Transcript for analysis...."
+      },
+      {
+        "index": 7,
+        "quarter": "Jul2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please paste the Hotels & Resorts Earnings Call Transcript where indicated. I am ready to perform the analysis once the transcript is provided...."
+      },
+      {
+        "index": 8,
+        "quarter": "May2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "The provided transcript is a placeholder. Therefore, a comprehensive summary of the key points discussed in a hypothetical conference call cannot be g..."
+      },
+      {
+        "index": 9,
+        "quarter": "Feb2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript. Once the transcript is provided, I will analyze it according to your instructions and ge..."
+      },
+      {
+        "index": 10,
+        "quarter": "Nov2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please paste the Hotels & Resorts Earnings Call Transcript where indicated. I am ready to analyze it according to your instructions once the content i..."
+      },
+      {
+        "index": 11,
+        "quarter": "Aug2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "The company reported a robust performance for Q3 2023, driven by significant growth in key performance indicators (KPIs) such as Occupancy Rate, Avera..."
+      },
+      {
+        "index": 12,
+        "quarter": "May2022",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "The company reported a strong Q3 2023, driven by robust recovery in travel demand. Key performance indicators showed significant year-over-year growth..."
+      },
+      {
+        "index": 13,
+        "quarter": "Feb2022",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 14,
+        "quarter": "Oct2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 15,
+        "quarter": "Jul2021",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "This analysis is based on a hypothetical Hotels & Resorts Earnings Call Transcript, as no transcript was provided.\n\nThe company demonstrated strong pe..."
+      },
+      {
+        "index": 16,
+        "quarter": "May2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 17,
+        "quarter": "Jan2021",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 18,
+        "quarter": "Oct2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 19,
+        "quarter": "Jul2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 20,
+        "quarter": "May2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 21,
+        "quarter": "Mar2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 22,
+        "quarter": "Feb2020",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 23,
+        "quarter": "Nov2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 24,
+        "quarter": "Aug2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 25,
+        "quarter": "Jun2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 26,
+        "quarter": "May2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 27,
+        "quarter": "Feb2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 28,
+        "quarter": "Jan2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 29,
+        "quarter": "Oct2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 30,
+        "quarter": "Aug2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 31,
+        "quarter": "May2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 32,
+        "quarter": "Jan2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 33,
+        "quarter": "Nov2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 34,
+        "quarter": "Aug2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 35,
+        "quarter": "May2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 36,
+        "quarter": "Jan2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 37,
+        "quarter": "Nov2016",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 38,
+        "quarter": "Aug2016",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 39,
+        "quarter": "Jul2016",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 40,
+        "quarter": "May2016",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 41,
+        "quarter": "Jan2016",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 42,
+        "quarter": "Nov2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 43,
+        "quarter": "Jul2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 44,
+        "quarter": "Feb2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      },
+      {
+        "index": 45,
+        "quarter": "Jan2026",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "x85DhWpnWTIVeOe4e4qY",
+    "name": "Sri Havisha Hospitality & Infrastructure Ltd",
+    "companyCode": "3039",
+    "nseCode": "HAVISHA",
+    "bseCode": "531322",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "xCKtzBhvWMjSZetjDBFH",
+    "name": "Kaushalya Infrastructure Development Corpn Ltd",
+    "companyCode": "1729",
+    "nseCode": "KAUSHALYA",
+    "bseCode": "532925",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "y3GpXafRYMsvmiVq8m3I",
+    "name": "Grand Continent Hotels Ltd",
+    "companyCode": "1285421",
+    "nseCode": "GCHOTELS",
+    "bseCode": null,
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 4,
+    "processedConcalls": 3,
+    "errorConcalls": 1,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Jul2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please provide the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 1,
+        "quarter": "Jun2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 2,
+        "quarter": "Mar2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Nov2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready to analyze the Hotels & Resorts Earnings Call Transcript. Please provide the transcript. I will then generate the summary and markdown..."
+      }
+    ]
+  },
+  {
+    "docId": "y5Xh8ov4mhaJYSYEqHTR",
+    "name": "Asian Hotels (North) Ltd",
+    "companyCode": "292",
+    "nseCode": "ASIANHOTNR",
+    "bseCode": "500023",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  },
+  {
+    "docId": "yONq4m0t3qBGtIR7OEMv",
+    "name": "Praveg Ltd",
+    "companyCode": "1269913",
+    "nseCode": null,
+    "bseCode": "531637",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 12,
+    "processedConcalls": 9,
+    "errorConcalls": 4,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Jun2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 1,
+        "quarter": "Feb2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Nov2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 3,
+        "quarter": "Aug2024",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "Failed to fetch PDF: Request failed with status code 404",
+        "summaryPreview": null
+      },
+      {
+        "index": 4,
+        "quarter": "Jun2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 5,
+        "quarter": "Feb2024",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 6,
+        "quarter": "Nov2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 7,
+        "quarter": "Aug2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 8,
+        "quarter": "Jun2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 9,
+        "quarter": "Feb2023",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Please provide the Hotels & Resorts Earnings Call Transcript.  I need the transcript text to perform the analysis and generate the output in the reque..."
+      },
+      {
+        "index": 10,
+        "quarter": "Nov2025",
+        "isProcessed": true,
+        "hasMarkdown": true,
+        "hasSummary": true,
+        "hasError": false,
+        "error": null,
+        "summaryPreview": "Okay, I'm ready. Please paste the Hotels & Resorts Earnings Call Transcript. I will analyze it and provide the output in the requested format.\n..."
+      },
+      {
+        "index": 11,
+        "quarter": "Aug2025",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "ySYGHs40OIEWgjlxpNRD",
+    "name": "The Byke Hospitality Ltd",
+    "companyCode": "3410",
+    "nseCode": "BYKE",
+    "bseCode": "531373",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 12,
+    "processedConcalls": 0,
+    "errorConcalls": 12,
+    "concalls": [
+      {
+        "index": 0,
+        "quarter": "Jun2019",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 1,
+        "quarter": "Nov2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 2,
+        "quarter": "Aug2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 3,
+        "quarter": "Jun2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 4,
+        "quarter": "Feb2018",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 5,
+        "quarter": "Dec2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 6,
+        "quarter": "Aug2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 7,
+        "quarter": "May2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 8,
+        "quarter": "Feb2017",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 9,
+        "quarter": "Nov2016",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 10,
+        "quarter": "Oct2016",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      },
+      {
+        "index": 11,
+        "quarter": "Aug2016",
+        "isProcessed": false,
+        "hasMarkdown": false,
+        "hasSummary": false,
+        "hasError": true,
+        "error": "No PDF link available",
+        "summaryPreview": null
+      }
+    ]
+  },
+  {
+    "docId": "zEPp5ZvkFyfQRqoGQ8DU",
+    "name": "Blue Coast Hotels Ltd",
+    "companyCode": "97566",
+    "nseCode": "BLUECOAST",
+    "bseCode": "531495",
+    "industryLink": "/market/IN02/IN0206/IN020601/IN020601001/",
+    "totalConcalls": 0,
+    "processedConcalls": 0,
+    "errorConcalls": 0,
+    "concalls": []
+  }
+]

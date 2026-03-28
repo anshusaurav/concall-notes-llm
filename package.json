@@ -1,0 +1,38 @@
+{
+  "name": "concall-notes-llm",
+  "version": "1.0.0",
+  "description": "A Node.js project to read CSV files and upload data to Firestore",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "server": "node server.js",
+    "server:dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
+    "chrono-node": "^2.8.3",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.0.0",
+    "luxon": "^3.7.1",
+    "mongodb": "^6.18.0",
+    "node-cron": "^4.1.1",
+    "pdf-parse": "^1.1.1",
+    "playwright": "^1.54.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "keywords": [
+    "csv",
+    "firestore",
+    "firebase",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT"
+}

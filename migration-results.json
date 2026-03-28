@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-08-05T04:48:22.135Z",
+  "companyCodes": [
+    "52"
+  ],
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "notFound": 0,
+    "failed": 0
+  },
+  "results": [
+    {
+      "companyCode": "52",
+      "status": "success",
+      "message": "Successfully migrated",
+      "mongoId": "68918d151f7801bc4b2da0e8",
+      "companyName": "Carysil Ltd"
+    }
+  ]
+}

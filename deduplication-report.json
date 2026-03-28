@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-02-13T17:29:46.565Z",
+  "originalCount": 5704,
+  "duplicatesRemoved": 1,
+  "remainingCount": 5703,
+  "spaceSavedPercentage": "0.0",
+  "duplicateStats": {
+    "byFirebaseId": 0,
+    "byCompanyCode": 0,
+    "byCodes": 0,
+    "byName": 1
+  },
+  "removedIds": [
+    "698f0da1429adc61fa257d2c"
+  ]
+}

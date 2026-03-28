@@ -1,0 +1,65 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.294908201.1752749459",
+      "domain": ".bseindia.com",
+      "path": "/",
+      "expires": 1787309459.241054,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "test_cookie",
+      "value": "CheckForPermission",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1752750359.356541,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__gads",
+      "value": "ID=e8e5f0032cda43cd:T=1752749459:RT=1752749459:S=ALNI_MaiZ7QrY60Q1ZSTpnLRcfIyOp7Mfw",
+      "domain": ".bseindia.com",
+      "path": "/",
+      "expires": 1786445459,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__gpi",
+      "value": "UID=00001167685757e8:T=1752749459:RT=1752749459:S=ALNI_MbDHTe1IdH0htmxqEMONJqZ-Zmriw",
+      "domain": ".bseindia.com",
+      "path": "/",
+      "expires": 1786445459,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__eoi",
+      "value": "ID=1af33d46c7db30b9:T=1752749459:RT=1752749459:S=AA-AfjYQh7TlvmFE5qA0Lltwptc-",
+      "domain": ".bseindia.com",
+      "path": "/",
+      "expires": 1768301459,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_TM52BJH9HF",
+      "value": "GS2.1.s1752749459$o1$g0$t1752749462$j57$l0$h0",
+      "domain": ".bseindia.com",
+      "path": "/",
+      "expires": 1787309462.770405,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
