@@ -27,9 +27,9 @@ if (EXCLUDED_COMPANY_CODES.size > 0) {
 class ConferenceCallNotes {
     constructor() {
         this.firebaseService = new FirebaseService();
-        this.geminiService = new ClaudeService();
+        this.claudeService = new ClaudeService();
         this.industryPromptsMap = new Map();
-        this.guidanceTracker = new GuidanceTracker(this.firebaseService, this.geminiService);
+        this.guidanceTracker = new GuidanceTracker(this.firebaseService, this.claudeService);
 
         this.firebaseService.initializeFirebase();
     }
@@ -365,7 +365,7 @@ class ConferenceCallNotes {
                 throw new Error('No text content extracted from PDF');
             }
             const updatedPrompt = prompt.replace("NOTIFICATION_TEXT_HERE", pdfText.trim())
-            const { parsedResponse } = await this.generateEventWithGemini(pdfText, updatedPrompt);
+            const { parsedResponse } = await this.generateEventWithClaude(pdfText, updatedPrompt);
 
             console.log('📊 parsedResponse type:', typeof parsedResponse);
             console.log('📊 parsedResponse content:', parsedResponse);
@@ -398,7 +398,7 @@ class ConferenceCallNotes {
                 throw new Error('No text content extracted from PDF');
             }
 
-            const { summary, markdownOutput } = await this.generateSummaryWithGemini(pdfText, industryPrompt);
+            const { summary, markdownOutput } = await this.generateSummaryWithClaude(pdfText, industryPrompt);
 
             return {
                 ...conCall,
@@ -415,9 +415,9 @@ class ConferenceCallNotes {
         }
     }
 
-    async generateSummaryWithGemini(pdfText, industryPrompt) {
+    async generateSummaryWithClaude(pdfText, industryPrompt) {
         try {
-            console.log('🤖 Generating summary with Gemini API...');
+            console.log('🤖 Generating summary with Claude API...');
 
             // Debug: check what placeholder the prompt uses
             const hasPlaceholder = industryPrompt.includes("[Paste Transcript Here]");
@@ -448,7 +448,7 @@ class ConferenceCallNotes {
                 - Make the summary comprehensive but concise
                 - Make the markdown analysis detailed and industry-focused`;
 
-            const response = await this.geminiService.callGeminiAPIWithRetry(prompt);
+            const response = await this.claudeService.callClaudeAPIWithRetry(prompt);
             const parsedResponse = this.parseStructuredResponse(response);
 
             return {
@@ -457,19 +457,19 @@ class ConferenceCallNotes {
             };
 
         } catch (error) {
-            console.error('❌ Error generating summary with Gemini:', error.message);
+            console.error('❌ Error generating summary with Claude:', error.message);
             throw new Error(`Claude API error: ${error.message}`);
         }
     }
 
-    async generateEventWithGemini(pdfText, prompt) {
+    async generateEventWithClaude(pdfText, prompt) {
         try {
-            console.log('🤖 Generating summary with Gemini API...');
+            console.log('🤖 Generating event with Claude API...');
             const calendarPrompt = prompt.replace("[Paste Announcement Here]", pdfText);
 
-            const response = await this.geminiService.callGeminiAPIWithRetry(calendarPrompt);
+            const response = await this.claudeService.callClaudeAPIWithRetry(calendarPrompt);
 
-            // Parse the JSON response from Gemini
+            // Parse the JSON response
             let parsedResponse = removeMarkdownCodeBlock(response);
             parsedResponse = JSON.parse(parsedResponse);
 
@@ -479,17 +479,17 @@ class ConferenceCallNotes {
             };
 
         } catch (error) {
-            console.error('❌ Error generating summary with Gemini:', error.message);
+            console.error('❌ Error generating event with Claude:', error.message);
             throw new Error(`Claude API error: ${error.message}`);
         }
     }
 
-    async generateInsightsWithGemini(pdfText) {
+    async generateInsightsWithClaude(pdfText) {
         try {
-            console.log('🤖 Generating annual report insights with Gemini API...');
+            console.log('🤖 Generating annual report insights with Claude API...');
             const insightsPrompt = ANNUAL_REPORT_INSIGHTS_PROMPT.replace("[Paste Annual Report Text Here]", pdfText);
 
-            const response = await this.geminiService.callGeminiAPIWithRetry(insightsPrompt);
+            const response = await this.claudeService.callClaudeAPIWithRetry(insightsPrompt);
             const parsedResponse = this.parseInsightsResponse(response);
 
             return {
@@ -497,7 +497,7 @@ class ConferenceCallNotes {
             };
 
         } catch (error) {
-            console.error('❌ Error generating insights with Gemini:', error.message);
+            console.error('❌ Error generating insights with Claude:', error.message);
             throw new Error(`Claude API error: ${error.message}`);
         }
     }
@@ -579,12 +579,12 @@ class ConferenceCallNotes {
 
     // Method to get current API key status
     getKeyStatus() {
-        return this.geminiService.getKeyStatus();
+        return this.claudeService.getKeyStatus();
     }
 
     // Method to manually reset a specific key
     resetKey(keyName) {
-        return this.geminiService.resetKey(keyName);
+        return this.claudeService.resetKey(keyName);
     }
     async delay(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));

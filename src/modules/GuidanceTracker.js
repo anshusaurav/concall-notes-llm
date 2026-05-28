@@ -1,9 +1,9 @@
 const { TRACKER_PROMPT } = require('../config/prompts');
 
 class GuidanceTracker {
-    constructor(firebaseService, geminiService) {
+    constructor(firebaseService, claudeService) {
         this.firebaseService = firebaseService;
-        this.geminiService = geminiService;
+        this.claudeService = claudeService;
     }
 
     async generateGuidanceTracker(companyCode, forceRegenerate = false) {
@@ -85,8 +85,8 @@ class GuidanceTracker {
 
             console.log(`📋 Formatted input length: ${formattedInput.length} characters`);
 
-            // Generate the guidance tracker using Gemini
-            const trackerResult = await this.generateTrackerWithGemini(formattedInput);
+            // Generate the guidance tracker using Claude
+            const trackerResult = await this.generateTrackerWithClaude(formattedInput);
 
             // Save the tracker result to the document
             await this.firebaseService.saveTrackerToFirestore(doc.id, trackerResult);
@@ -195,9 +195,9 @@ class GuidanceTracker {
         return formattedInput.trim();
     }
 
-    async generateTrackerWithGemini(formattedInput) {
+    async generateTrackerWithClaude(formattedInput) {
         try {
-            console.log('🤖 Generating guidance tracker with Gemini API...');
+            console.log('🤖 Generating guidance tracker with Claude API...');
 
             const trackerPrompt = `Role and Goal:
                 You are an expert financial accountability analyst and a meticulous JSON generator. Your primary objective is to create a comprehensive, multi-period tracker of a company's guidance and commitments. You will be given a single text input containing a chronological series of historical earnings call summaries, each clearly separated by unique delimiters.
@@ -263,7 +263,7 @@ class GuidanceTracker {
             *   Organize the commitment objects in the array chronologically based on their 'origin_period'.
             *   **Return ONLY a valid JSON object.** Do not include any extra conversational text, introductions, or Markdown formatting. Simply provide the raw JSON.`
 
-            const response = await this.geminiService.callGeminiAPIWithRetry(trackerPrompt);
+            const response = await this.claudeService.callClaudeAPIWithRetry(trackerPrompt);
             console.log(response);
             const parsedTracker = this.parseTrackerResponse(response);
 
@@ -271,8 +271,8 @@ class GuidanceTracker {
             return parsedTracker;
 
         } catch (error) {
-            console.error('❌ Error generating tracker with Gemini:', error.message);
-            throw new Error(`Gemini tracker generation error: ${error.message}`);
+            console.error('❌ Error generating tracker with Claude:', error.message);
+            throw new Error(`Claude tracker generation error: ${error.message}`);
         }
     }
 

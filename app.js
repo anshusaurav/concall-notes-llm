@@ -29,26 +29,27 @@ const MONGODB_CONNECT_TIMEOUT = parseInt(process.env.MONGODB_CONNECT_TIMEOUT) ||
 const MONGODB_SOCKET_TIMEOUT = parseInt(process.env.MONGODB_SOCKET_TIMEOUT) || 30000;
 const MONGODB_SERVER_SELECTION_TIMEOUT = parseInt(process.env.MONGODB_SERVER_SELECTION_TIMEOUT) || 30000;
 
-if (!MONGODB_URI) {
-    console.error('❌ MONGODB_URI environment variable is required');
-    process.exit(1);
-}
-
-// Create a MongoClient with proper timeout settings from environment
-const client = new MongoClient(MONGODB_URI, {
-    serverApi: {
-        version: ServerApiVersion.v1,
-        strict: true,
-        deprecationErrors: true,
-    },
-    connectTimeoutMS: MONGODB_CONNECT_TIMEOUT,
-    socketTimeoutMS: MONGODB_SOCKET_TIMEOUT,
-    serverSelectionTimeoutMS: MONGODB_SERVER_SELECTION_TIMEOUT,
-});
-
+// MongoDB client is created lazily inside testMongoConnection() so that a
+// missing MONGODB_URI only causes an error when MongoDB is actually used,
+// not on every startup of the daily concall-processing run.
 async function testMongoConnection() {
+    if (!MONGODB_URI) {
+        throw new Error(
+            'MONGODB_URI environment variable is required for MongoDB operations'
+        );
+    }
     try {
         console.log('🔌 Connecting to MongoDB...');
+        const client = new MongoClient(MONGODB_URI, {
+            serverApi: {
+                version: ServerApiVersion.v1,
+                strict: true,
+                deprecationErrors: true,
+            },
+            connectTimeoutMS: MONGODB_CONNECT_TIMEOUT,
+            socketTimeoutMS: MONGODB_SOCKET_TIMEOUT,
+            serverSelectionTimeoutMS: MONGODB_SERVER_SELECTION_TIMEOUT,
+        });
         await client.connect();
 
         // Send a ping to confirm a successful connection
@@ -66,7 +67,7 @@ class MainProcessor extends ConferenceCallNotes {
     constructor() {
         super();
         this.documentCleaner = new DocumentCleaner(this.firebaseService);
-        this.guidanceTracker = new GuidanceTracker(this.firebaseService, this.geminiService);
+        this.guidanceTracker = new GuidanceTracker(this.firebaseService, this.claudeService);
         this.mongoClient = null;
         this.mongoDb = null;
         this.mongoCollection = null;
@@ -168,21 +169,24 @@ class MainProcessor extends ConferenceCallNotes {
                     // Merge with existing entry
                     const existing = concallsMap.get(key);
                     const merged = {
-                        ...existing,
-                        // Merge links - prefer non-empty values
+                        // Use incoming concall as base so any new fields are preserved
+                        ...concall,
+                        // Fall back to existing links if new concall has empty ones
                         link: concall.link || existing.link,
                         pptLink: concall.pptLink || existing.pptLink,
                         recLink: concall.recLink || existing.recLink,
-                        // Prefer processed content
-                        markdownOutput: concall.markdownOutput || existing.markdownOutput,
-                        summary: concall.summary || existing.summary,
-                        isProcessed: concall.isProcessed || existing.isProcessed,
-                        processingDate: concall.processingDate || existing.processingDate,
-                        textLength: concall.textLength || existing.textLength,
-                        isGuidanceTableStandardized: concall.isGuidanceTableStandardized || existing.isGuidanceTableStandardized,
-                        guidanceTableStandardizedDate: concall.guidanceTableStandardizedDate || existing.guidanceTableStandardizedDate,
-                        processingError: concall.processingError || existing.processingError,
-                        guidanceTableStandardizationError: concall.guidanceTableStandardizationError || existing.guidanceTableStandardizationError
+                        // Prefer already-processed content — don't lose computed data
+                        markdownOutput: existing.markdownOutput || concall.markdownOutput,
+                        summary: existing.summary || concall.summary,
+                        isProcessed: existing.isProcessed || concall.isProcessed,
+                        processingDate: existing.processingDate || concall.processingDate,
+                        textLength: existing.textLength || concall.textLength,
+                        isGuidanceTableStandardized: existing.isGuidanceTableStandardized || concall.isGuidanceTableStandardized,
+                        guidanceTableStandardizedDate: existing.guidanceTableStandardizedDate || concall.guidanceTableStandardizedDate,
+                        guidanceTableStandardizationError: existing.guidanceTableStandardizationError || concall.guidanceTableStandardizationError,
+                        guidanceTableStandardizationNote: existing.guidanceTableStandardizationNote || concall.guidanceTableStandardizationNote,
+                        // Clear stale processingError when the incoming concall has a valid link
+                        processingError: concall.link ? null : (existing.processingError || concall.processingError),
                     };
                     concallsMap.set(key, merged);
                     console.log(`🔄 Merged duplicate concall for quarter: ${concall.quarter || 'N/A'}`);
@@ -332,7 +336,7 @@ class MainProcessor extends ConferenceCallNotes {
                 throw new Error('No text content extracted from PDF');
             }
 
-            const { parsedResponse } = await this.generateEventWithGemini(pdfText, prompt);
+            const { parsedResponse } = await this.generateEventWithClaude(pdfText, prompt);
 
             console.log('📊 parsedResponse type:', typeof parsedResponse);
             console.log('📊 parsedResponse content:', parsedResponse);
@@ -428,24 +432,24 @@ class MainProcessor extends ConferenceCallNotes {
         return results;
     }
 
-    async standardizeGuidanceTableWithGemini(markdownInput) {
+    async standardizeGuidanceTableWithClaude(markdownInput) {
         try {
-            console.log('🤖 Reformatting guidance section into a table with Gemini...');
+            console.log('🤖 Reformatting guidance section into a table with Claude...');
             const prompt = GUIDANCE_TABLE_PROMPT.replace("[PASTE FULL MARKDOWN HERE]", markdownInput);
 
             // Use the existing retry logic to call the API
-            const updatedMarkdown = await this.geminiService.callGeminiAPIWithRetry(prompt);
+            const updatedMarkdown = await this.claudeService.callClaudeAPIWithRetry(prompt);
 
             // Basic check to see if the response is valid markdown
             if (updatedMarkdown && updatedMarkdown.includes('#')) {
                 console.log('✅ Successfully reformatted markdown.');
                 return updatedMarkdown;
             } else {
-                console.warn('⚠️ Gemini did not return valid markdown, returning original.');
+                console.warn('⚠️ Claude did not return valid markdown, returning original.');
                 return markdownInput; // Return original if response is strange
             }
         } catch (error) {
-            console.error('❌ Error generating standardized guidance table with Gemini:', error.message);
+            console.error('❌ Error generating standardized guidance table with Claude:', error.message);
             // In case of error, return the original markdown to avoid data loss
             return markdownInput;
         }
@@ -484,7 +488,7 @@ class MainProcessor extends ConferenceCallNotes {
                 if (call.markdownOutput && call.markdownOutput.toLowerCase().includes('guidance')) {
                     try {
                         const originalMarkdown = call.markdownOutput;
-                        const updatedMarkdown = await this.standardizeGuidanceTableWithGemini(originalMarkdown);
+                        const updatedMarkdown = await this.standardizeGuidanceTableWithClaude(originalMarkdown);
 
                         // If Gemini returned a modified version, mark for update
                         if (originalMarkdown !== updatedMarkdown) {
@@ -664,7 +668,7 @@ class MainProcessor extends ConferenceCallNotes {
                 throw new Error('No text content extracted from PDF');
             }
 
-            const { insightsMarkdown } = await this.generateInsightsWithGemini(pdfText);
+            const { insightsMarkdown } = await this.generateInsightsWithClaude(pdfText);
 
             return {
                 ...report,
@@ -1491,18 +1495,22 @@ async function main() {
 
         // Display configuration information
         console.log('🔑 API Key Status:', processor.getKeyStatus());
-        console.log('🤖 Model Configuration:', processor.geminiService.getModelConfig());
+        console.log('🤖 Model Configuration:', processor.claudeService.getModelConfig());
 
         // Fix hotel industry companies - force reprocess concalls
         // await processor.fixCompaniesByIndustryPath("/market/IN02/IN0206/IN020601/IN020601001/");
 
-        // await processor.readIndustryPrompts();
-        // await processor.readAllFilingDocuments();
-        //
-        // // Uncomment the operations you want to run:
-        // // await processor.processMultipleLocalAnnouncements();
+        // ── Daily pipeline ────────────────────────────────────────────────────
+        // Run Claude summarisation on any unprocessed concalls
+        // (Deduplication / rawDocuments merge is handled separately via run-dedup-only.js)
+        await processor.readIndustryPrompts();
+        await processor.readAllFilingDocuments();
+        // ─────────────────────────────────────────────────────────────────────
+
+        // ── One-off / manual operations (uncomment as needed) ────────────────
+        // await processor.fixCompaniesByIndustryPath("/market/IN02/IN0206/IN020601/IN020601001/");
         // await processor.cleanDuplicateDocuments();
-        await processor.cleanDuplicateRawDocuments();
+        // await processor.processMultipleLocalAnnouncements();
         // await processor.generateGuidanceTracker("353946");
         // await processor.generateTrackersForAllCompanies();
         // await processor.standardizeGuidanceTableForCompany("1274917");
