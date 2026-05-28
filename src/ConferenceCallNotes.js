@@ -1,14 +1,33 @@
 const FirebaseService = require('./services/FirebaseService');
-const GeminiService = require('./services/GeminiService');
+const ClaudeService = require('./services/ClaudeService');
 const GuidanceTracker = require('./modules/GuidanceTracker');
 const { fetchPDF, readPDF, readPDFFirstTwoPages, readPDFFromFile, removeMarkdownCodeBlock } = require('./utils/pdfUtils');
 const { TRACKER_PROMPT, ANNOUNCEMENT_CALENDAR_PROMPT, GUIDANCE_TABLE_PROMPT, ANNUAL_REPORT_INSIGHTS_PROMPT } = require('./config/prompts');
 const fs = require('fs');
 
+// ── Processing limits (override via environment variables) ────────────────────
+const MAX_CONCALLS_TO_PROCESS = parseInt(process.env.MAX_CONCALLS_TO_PROCESS) || 16;
+const MAX_ANNOUNCEMENTS_TO_PROCESS = parseInt(process.env.MAX_ANNOUNCEMENTS_TO_PROCESS) || 10;
+
+// Comma-separated company codes to skip entirely.
+// Set EXCLUDED_COMPANY_CODES="406,295" in the environment to exclude companies.
+const EXCLUDED_COMPANY_CODES = new Set(
+    (process.env.EXCLUDED_COMPANY_CODES || '')
+        .split(',')
+        .map(c => c.trim())
+        .filter(Boolean)
+);
+
+console.log(`⚙️  Processing limits — concalls: ${MAX_CONCALLS_TO_PROCESS}, announcements: ${MAX_ANNOUNCEMENTS_TO_PROCESS}`);
+if (EXCLUDED_COMPANY_CODES.size > 0) {
+    console.log(`⚙️  Excluded company codes: [${[...EXCLUDED_COMPANY_CODES].join(', ')}]`);
+}
+// ─────────────────────────────────────────────────────────────────────────────
+
 class ConferenceCallNotes {
     constructor() {
         this.firebaseService = new FirebaseService();
-        this.geminiService = new GeminiService();
+        this.geminiService = new ClaudeService();
         this.industryPromptsMap = new Map();
         this.guidanceTracker = new GuidanceTracker(this.firebaseService, this.geminiService);
 
@@ -164,6 +183,7 @@ class ConferenceCallNotes {
     async processAnnouncementDocument(doc) {
         const docData = doc.data();
         const name = docData?.name || '';
+        const companyCode = docData?.companyCode || '';
         const announcementList = docData?.documents?.['Announcements'] || [];
         const industryLink = docData?.['industryLink'] || '';
 
@@ -171,7 +191,8 @@ class ConferenceCallNotes {
         console.log(`🏭 Industry link: ${industryLink}`);
         console.log(`📋 Announcements found: ${announcementList.length}`);
 
-        if (doc?.data().companyCode === "406" || doc?.data().companyCode === "295") {
+        if (EXCLUDED_COMPANY_CODES.has(companyCode)) {
+            console.log(`⏭️  Company ${companyCode} (${name}) is excluded from processing`);
             return;
         }
 
@@ -182,7 +203,7 @@ class ConferenceCallNotes {
 
         const updatedAnnouncements = await this.processAnnouncements(announcementList, ANNOUNCEMENT_CALENDAR_PROMPT);
 
-        if (updatedAnnouncements.some(announcement => announcement.isProcessed && !(announcement.parsedResponse.date === "2024-10-27"))) {
+        if (updatedAnnouncements.some(announcement => announcement.isProcessed)) {
             await this.firebaseService.updateAnnouncementsInFirestore(doc.id, updatedAnnouncements);
             console.log(`💾 Updated announcements for document ${doc.id} in Firestore`);
         }
@@ -199,8 +220,10 @@ class ConferenceCallNotes {
         console.log(`🏭 Industry link: ${industryLink}`);
         console.log(`📞 Conference calls found: ${conCallList.length}`);
 
-        if (companyCode === "406" || companyCode === "295")
+        if (EXCLUDED_COMPANY_CODES.has(companyCode)) {
+            console.log(`⏭️  Company ${companyCode} (${name}) is excluded from processing`);
             return { companyCode, hasChanges: false };
+        }
         if (conCallList.length === 0) {
             console.log(`⏭️  No conference calls found for document ${doc.id}`);
             return { companyCode, hasChanges: false };
@@ -229,7 +252,7 @@ class ConferenceCallNotes {
         const updatedAnnouncements = [];
 
         for (const [index, announcement] of announcementList.entries()) {
-            if (index < 10) {
+            if (index < MAX_ANNOUNCEMENTS_TO_PROCESS) {
                 try {
                     console.log(`📢 Processing announcement ${index + 1}/${announcementList.length}`);
 
@@ -274,7 +297,7 @@ class ConferenceCallNotes {
         let hasChanges = false;
 
         for (const [index, conCall] of conCallList.entries()) {
-            if (index < 16) {
+            if (index < MAX_CONCALLS_TO_PROCESS) {
                 try {
                     console.log(`📞 Processing conference call ${index + 1}/${conCallList.length}`);
 
@@ -284,10 +307,11 @@ class ConferenceCallNotes {
                         continue;
                     }
 
-                    // Skip documents with non-Gemini errors (timeout, etc.)
-                    // Only retry if it's a Gemini error, "No PDF link available" error, or never processed
+                    // Skip documents with non-LLM errors (timeout, etc.)
+                    // Only retry if it's an LLM API error, "No PDF link available" error, or never processed
                     if (conCall.processingError &&
                         !conCall.processingError.includes('Gemini') &&
+                        !conCall.processingError.includes('Claude') &&
                         !conCall.processingError.includes('No PDF link available')) {
                         console.log(`⏭️  Conference call ${index + 1} skipped - previous error: ${conCall.processingError}`);
                         updatedConCalls.push(conCall);
@@ -434,7 +458,7 @@ class ConferenceCallNotes {
 
         } catch (error) {
             console.error('❌ Error generating summary with Gemini:', error.message);
-            throw new Error(`Gemini API error: ${error.message}`);
+            throw new Error(`Claude API error: ${error.message}`);
         }
     }
 
@@ -456,7 +480,7 @@ class ConferenceCallNotes {
 
         } catch (error) {
             console.error('❌ Error generating summary with Gemini:', error.message);
-            throw new Error(`Gemini API error: ${error.message}`);
+            throw new Error(`Claude API error: ${error.message}`);
         }
     }
 
@@ -474,7 +498,7 @@ class ConferenceCallNotes {
 
         } catch (error) {
             console.error('❌ Error generating insights with Gemini:', error.message);
-            throw new Error(`Gemini API error: ${error.message}`);
+            throw new Error(`Claude API error: ${error.message}`);
         }
     }
 
@@ -504,6 +528,12 @@ class ConferenceCallNotes {
         }
     }
 
+    stripCodeFence(text) {
+        if (!text) return text;
+        // LLMs sometimes wrap markdown output in ```markdown ... ``` or ``` ... ```
+        return text.replace(/^```(?:markdown)?\s*\n/, '').replace(/\n```\s*$/, '').trim();
+    }
+
     parseStructuredResponse(response) {
         try {
             console.log('📝 Parsing structured response...');
@@ -512,7 +542,8 @@ class ConferenceCallNotes {
             const markdownMatch = response.match(/===MARKDOWN_START===([\s\S]*?)===MARKDOWN_END===/);
 
             const summary = summaryMatch ? summaryMatch[1].trim() : null;
-            const markdownOutput = markdownMatch ? markdownMatch[1].trim() : null;
+            const rawMarkdown = markdownMatch ? markdownMatch[1].trim() : null;
+            const markdownOutput = this.stripCodeFence(rawMarkdown);
 
             if (summary && markdownOutput) {
                 console.log('✅ Successfully parsed structured response');
@@ -530,15 +561,10 @@ class ConferenceCallNotes {
 
     parseAlternativeFormat(response) {
         try {
-            const paragraphs = response.split('\n\n').filter(p => p.trim().length > 0);
+            const cleaned = this.stripCodeFence(response.trim());
+            const paragraphs = cleaned.split('\n\n').filter(p => p.trim().length > 0);
             const summary = paragraphs.slice(0, 2).join(' ').substring(0, 1000);
-            const markdownOutput = `# Conference Call Analysis
-
-            ## Executive Summary
-            ${paragraphs.slice(0, 2).join('\n\n')}
-            
-            ## Detailed Analysis
-            ${paragraphs.slice(2).join('\n\n')}`;
+            const markdownOutput = `# Conference Call Analysis\n\n## Executive Summary\n\n${paragraphs.slice(0, 2).join('\n\n')}\n\n## Detailed Analysis\n\n${paragraphs.slice(2).join('\n\n')}`;
 
             return { summary, markdownOutput };
 
@@ -546,7 +572,7 @@ class ConferenceCallNotes {
             console.error('Alternative parsing failed:', error.message);
             return {
                 summary: response.substring(0, 500) + '...',
-                markdownOutput: `# Conference Call Analysis\n\n${response}`
+                markdownOutput: `# Conference Call Analysis\n\n${this.stripCodeFence(response.trim())}`
             };
         }
     }
