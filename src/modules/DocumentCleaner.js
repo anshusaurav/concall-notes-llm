@@ -4,9 +4,39 @@ class DocumentCleaner {
     }
 
     /**
+     * Parses a quarter string like "Q4FY26" or "Q4 FY26" into a sortable object.
+     * Entries without a parseable quarter are placed at the end.
+     * @param {string|undefined} quarter
+     * @returns {{ fy: number, qNum: number }}
+     */
+    _parseQuarter(quarter) {
+        if (!quarter) return { fy: 0, qNum: 0 };
+        const match = quarter.match(/Q(\d+)\s*FY(\d+)/i);
+        if (match) {
+            return { fy: parseInt(match[2], 10), qNum: parseInt(match[1], 10) };
+        }
+        return { fy: 0, qNum: 0 };
+    }
+
+    /**
+     * Sorts concalls by quarter descending (newest first: Q4FY26 → Q3FY26 → … → Q1FY25).
+     * Entries without a recognised quarter format are placed at the end.
+     * @param {Array} concalls
+     * @returns {Array} - New sorted array (original array is not mutated)
+     */
+    _sortConcallsByQuarter(concalls) {
+        return [...concalls].sort((a, b) => {
+            const pa = this._parseQuarter(a.quarter);
+            const pb = this._parseQuarter(b.quarter);
+            if (pb.fy !== pa.fy) return pb.fy - pa.fy;
+            return pb.qNum - pa.qNum;
+        });
+    }
+
+    /**
      * Deduplicates concalls within an array based on quarter
      * @param {Array} concalls - Array of concall objects
-     * @returns {Array} - Deduplicated array of concalls
+     * @returns {Array} - Deduplicated array of concalls, sorted newest-first
      */
     deduplicateConcalls(concalls) {
         if (!Array.isArray(concalls) || concalls.length === 0) {
@@ -53,7 +83,7 @@ class DocumentCleaner {
             }
         });
 
-        return Array.from(concallsMap.values());
+        return this._sortConcallsByQuarter(Array.from(concallsMap.values()));
     }
 
     /**
@@ -200,7 +230,7 @@ class DocumentCleaner {
                     }
                 });
 
-                const mergedConcalls = Array.from(allConcalls.values());
+                const mergedConcalls = this._sortConcallsByQuarter(Array.from(allConcalls.values()));
                 const mergedAnnouncements = Array.from(allAnnouncements.values());
 
                 if (hasOnlyRawDocs) {
@@ -492,7 +522,7 @@ class DocumentCleaner {
 
                 // Prepare update operation for the document to keep with merged concalls and announcements
                 if (allConcalls.size > 0 || allAnnouncements.size > 0) {
-                    const mergedConcalls = Array.from(allConcalls.values());
+                    const mergedConcalls = this._sortConcallsByQuarter(Array.from(allConcalls.values()));
                     const mergedAnnouncements = Array.from(allAnnouncements.values());
 
                     batchOperations.push({
