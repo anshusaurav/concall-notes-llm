@@ -400,11 +400,28 @@ class ConferenceCallNotes {
 
             const { summary, markdownOutput } = await this.generateSummaryWithClaude(pdfText, industryPrompt);
 
+            // Standardize guidance section as a Markdown table inline
+            let finalMarkdown = markdownOutput;
+            let isGuidanceTableStandardized = false;
+            if (markdownOutput && markdownOutput.toLowerCase().includes('guidance')) {
+                try {
+                    finalMarkdown = await this.standardizeGuidanceTable(markdownOutput);
+                    isGuidanceTableStandardized = true;
+                    console.log('📊 Guidance table standardized');
+                } catch (err) {
+                    console.warn(`⚠️  Guidance table standardization failed: ${err.message}`);
+                }
+            } else {
+                isGuidanceTableStandardized = true;
+            }
+
             return {
                 ...conCall,
                 summary: summary,
-                markdownOutput: markdownOutput,
+                markdownOutput: finalMarkdown,
                 isProcessed: true,
+                isGuidanceTableStandardized,
+                guidanceTableStandardizedDate: new Date().toISOString(),
                 processingDate: new Date().toISOString(),
                 textLength: pdfText.length
             };
@@ -413,6 +430,13 @@ class ConferenceCallNotes {
             console.error(`❌ Error processing single conference call:`, error.message);
             throw error;
         }
+    }
+
+    async standardizeGuidanceTable(markdownInput) {
+        const prompt = GUIDANCE_TABLE_PROMPT.replace('[PASTE FULL MARKDOWN HERE]', markdownInput);
+        const result = await this.claudeService.callClaudeAPIWithRetry(prompt);
+        const cleaned = this.stripCodeFence(result);
+        return (cleaned && cleaned.includes('#')) ? cleaned : markdownInput;
     }
 
     async generateSummaryWithClaude(pdfText, industryPrompt) {

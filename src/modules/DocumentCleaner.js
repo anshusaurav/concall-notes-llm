@@ -436,9 +436,13 @@ class DocumentCleaner {
                         const originalCount = concalls.length;
                         const dedupedConcalls = this.deduplicateConcalls(concalls);
 
-                        // Only update if duplicates were found
-                        if (dedupedConcalls.length < originalCount) {
-                            console.log(`📊 Company ${doc.data.name}: Deduplicating ${originalCount} → ${dedupedConcalls.length} concalls`);
+                        // Update if duplicates removed OR sort order differs from stored order
+                        const orderChanged = dedupedConcalls.some((c, i) => c.quarter !== concalls[i]?.quarter);
+                        if (dedupedConcalls.length < originalCount || orderChanged) {
+                            const action = dedupedConcalls.length < originalCount
+                                ? `Deduplicating ${originalCount} → ${dedupedConcalls.length} concalls`
+                                : `Sorting concalls for correct order`;
+                            console.log(`📊 Company ${doc.data.name}: ${action}`);
 
                             batchOperations.push({
                                 type: 'update',

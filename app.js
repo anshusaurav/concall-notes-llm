@@ -1501,8 +1501,14 @@ async function main() {
         // await processor.fixCompaniesByIndustryPath("/market/IN02/IN0206/IN020601/IN020601001/");
 
         // ── Daily pipeline ────────────────────────────────────────────────────
-        // Run Claude summarisation on any unprocessed concalls
-        // (Deduplication / rawDocuments merge is handled separately via run-dedup-only.js)
+        // Step 1: Merge any new raw documents (from data import) into main collection
+        await processor.cleanDuplicateRawDocuments();
+
+        // Step 2: Deduplicate and sort concalls within each company document
+        await processor.cleanDuplicateDocuments();
+
+        // Step 3: Process unprocessed concalls with Claude
+        // Guidance table standardization happens inline in processSingleConferenceCall
         await processor.readIndustryPrompts();
         await processor.readAllFilingDocuments();
         // ─────────────────────────────────────────────────────────────────────
