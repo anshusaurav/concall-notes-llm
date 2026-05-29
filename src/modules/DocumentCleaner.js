@@ -4,23 +4,48 @@ class DocumentCleaner {
     }
 
     /**
-     * Parses a quarter string like "Q4FY26" or "Q4 FY26" into a sortable object.
-     * Entries without a parseable quarter are placed at the end.
+     * Parses a quarter/period string into a comparable { year, month } object.
+     * Handles:
+     *   "Q4FY26" / "Q4 FY26"  — fiscal-year format (Q4 FY26 = Jan 2026)
+     *   "May2026" / "Nov2025"  — MonthYear format
+     * Returns { year: 0, month: 0 } for unrecognised formats (sorted to end).
      * @param {string|undefined} quarter
-     * @returns {{ fy: number, qNum: number }}
+     * @returns {{ year: number, month: number }}
      */
     _parseQuarter(quarter) {
-        if (!quarter) return { fy: 0, qNum: 0 };
-        const match = quarter.match(/Q(\d+)\s*FY(\d+)/i);
-        if (match) {
-            return { fy: parseInt(match[2], 10), qNum: parseInt(match[1], 10) };
+        const MONTH_ABBR = {
+            jan:1,feb:2,mar:3,apr:4,may:5,jun:6,
+            jul:7,aug:8,sep:9,oct:10,nov:11,dec:12
+        };
+
+        if (!quarter) return { year: 0, month: 0 };
+
+        // "Q4FY26" / "Q4 FY26"
+        const qMatch = quarter.match(/Q(\d+)\s*FY(\d+)/i);
+        if (qMatch) {
+            const qNum = parseInt(qMatch[1], 10);
+            const fy   = parseInt(qMatch[2], 10);
+            // Indian FY: Q1=Apr-Jun, Q2=Jul-Sep, Q3=Oct-Dec, Q4=Jan-Mar
+            const base       = 2000 + fy - 1;
+            const monthStart = { 1: 4, 2: 7, 3: 10, 4: 1 };
+            const yearAdd    = qNum === 4 ? 1 : 0;
+            return { year: base + yearAdd, month: monthStart[qNum] ?? 1 };
         }
-        return { fy: 0, qNum: 0 };
+
+        // "May2026" / "Nov2025"
+        const mMatch = quarter.match(/^([A-Za-z]+)(\d{4})$/);
+        if (mMatch) {
+            const m = MONTH_ABBR[mMatch[1].toLowerCase().slice(0, 3)];
+            if (m) return { year: parseInt(mMatch[2], 10), month: m };
+        }
+
+        return { year: 0, month: 0 };
     }
 
     /**
-     * Sorts concalls by quarter descending (newest first: Q4FY26 → Q3FY26 → … → Q1FY25).
-     * Entries without a recognised quarter format are placed at the end.
+     * Sorts concalls by quarter descending (newest first).
+     * Handles both "Q4FY26" and "May2026" style quarter strings.
+     * Entries without a recognised format are placed at the end.
      * @param {Array} concalls
      * @returns {Array} - New sorted array (original array is not mutated)
      */
@@ -28,8 +53,8 @@ class DocumentCleaner {
         return [...concalls].sort((a, b) => {
             const pa = this._parseQuarter(a.quarter);
             const pb = this._parseQuarter(b.quarter);
-            if (pb.fy !== pa.fy) return pb.fy - pa.fy;
-            return pb.qNum - pa.qNum;
+            if (pb.year !== pa.year) return pb.year - pa.year;
+            return pb.month - pa.month;
         });
     }
 
