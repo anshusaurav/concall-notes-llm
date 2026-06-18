@@ -1,6 +1,13 @@
 const express = require('express');
 require('dotenv').config();
 
+// Prevent malformed PDFs (bad XRef, corrupt streams, etc.) from crashing the
+// entire process. pdfjs-dist emits unhandled rejections that escape try-catch
+// in some Node versions — log them and continue.
+process.on('unhandledRejection', (reason) => {
+    console.error('⚠️  Unhandled rejection (non-fatal):', reason?.message || reason);
+});
+
 const ConferenceCallNotes = require('./src/ConferenceCallNotes');
 const DocumentCleaner = require('./src/modules/DocumentCleaner');
 const GuidanceTracker = require('./src/modules/GuidanceTracker');
@@ -297,6 +304,82 @@ class MainProcessor extends ConferenceCallNotes {
 
     async generateTrackersForAllCompanies() {
         return this.guidanceTracker.generateTrackersForAllCompanies();
+    }
+
+    /**
+     * Generates guidance trackers only for companies that have processed concalls
+     * but no existing tracker yet. Skips companies that already have a tracker.
+     */
+    async generateTrackersForCompaniesWithoutTracker() {
+        try {
+            console.log('\n🔍 Scanning for companies with processed concalls but no guidance tracker...');
+
+            const snapshot = await this.firebaseService.getAllDocuments();
+            if (snapshot.empty) {
+                console.log('📭 No documents found');
+                return;
+            }
+
+            // Collect unique company codes that need a tracker
+            const companyCodesNeedingTracker = new Set();
+            snapshot.docs.forEach(doc => {
+                const data = doc.data();
+                const companyCode = data.companyCode;
+                if (!companyCode) return;
+
+                // Has processed concalls?
+                const concalls = data?.documents?.['Concalls'] || [];
+                const hasProcessed = concalls.some(c => c.markdownOutput && c.markdownOutput.trim().length > 0);
+                if (!hasProcessed) return;
+
+                // Already has a non-empty tracker?
+                const hasTracker = data?.tracker?.guidance_tracker &&
+                                   Array.isArray(data.tracker.guidance_tracker) &&
+                                   data.tracker.guidance_tracker.length > 0;
+                if (hasTracker) return;
+
+                companyCodesNeedingTracker.add(companyCode);
+            });
+
+            const total = companyCodesNeedingTracker.size;
+            if (total === 0) {
+                console.log('✅ All companies with processed concalls already have guidance trackers.');
+                return;
+            }
+
+            console.log(`📋 Found ${total} companies needing a tracker. Generating...`);
+
+            let successCount = 0;
+            let skipCount = 0;
+            let errorCount = 0;
+
+            for (const companyCode of companyCodesNeedingTracker) {
+                try {
+                    console.log(`\n🏢 Generating tracker for: ${companyCode}`);
+                    const generated = await this.guidanceTracker.generateGuidanceTracker(companyCode);
+                    if (generated) {
+                        successCount++;
+                        console.log(`✅ Tracker generated for ${companyCode}`);
+                    } else {
+                        skipCount++;
+                        console.log(`⏭️  Skipped ${companyCode} (no eligible concalls)`);
+                    }
+                    await this.delay(1000);
+                } catch (error) {
+                    errorCount++;
+                    console.error(`❌ Error for ${companyCode}:`, error.message);
+                }
+            }
+
+            console.log('\n📊 Tracker backfill summary:');
+            console.log(`   ✅ Generated: ${successCount}`);
+            console.log(`   ⏭️  Skipped:   ${skipCount}`);
+            console.log(`   ❌ Errors:    ${errorCount}`);
+            console.log(`   📋 Total:     ${total}`);
+        } catch (error) {
+            console.error('❌ Error in generateTrackersForCompaniesWithoutTracker:', error.message);
+            throw error;
+        }
     }
 
     async deleteCompanyDocuments(companyCode) {
@@ -1511,6 +1594,12 @@ async function main() {
         // Guidance table standardization happens inline in processSingleConferenceCall
         await processor.readIndustryPrompts();
         await processor.readAllFilingDocuments();
+
+        // Step 4: Generate guidance trackers for any company that has processed
+        // concalls but never received a tracker (backfill for new additions).
+        // Companies with new concalls already had their tracker updated inline
+        // inside readAllFilingDocuments(), so this only touches truly missing ones.
+        await processor.generateTrackersForCompaniesWithoutTracker();
         // ─────────────────────────────────────────────────────────────────────
 
         // ── One-off / manual operations (uncomment as needed) ────────────────

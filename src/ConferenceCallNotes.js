@@ -116,8 +116,12 @@ class ConferenceCallNotes {
                 for (const companyCode of companiesWithChanges) {
                     try {
                         console.log(`\n📈 Generating guidance tracker for company: ${companyCode}`);
-                        await this.guidanceTracker.generateGuidanceTracker(companyCode);
-                        console.log(`✅ Guidance tracker updated for company: ${companyCode}`);
+                        const generated = await this.guidanceTracker.generateGuidanceTracker(companyCode);
+                        if (generated) {
+                            console.log(`✅ Guidance tracker saved for company: ${companyCode}`);
+                        } else {
+                            console.log(`⏭️  Guidance tracker skipped for company: ${companyCode} (no eligible concalls)`);
+                        }
                         await this.delay(1000); // Small delay between companies
                     } catch (error) {
                         console.error(`❌ Error generating guidance tracker for ${companyCode}:`, error.message);
@@ -457,20 +461,21 @@ class ConferenceCallNotes {
 
             const prompt = `${industryPrompt}
                 Please analyze the conference call transcript and provide your response in the following EXACT format:
-                
+
                 ===SUMMARY_START===
                 [Write a comprehensive summary of the key points discussed in the conference call]
                 ===SUMMARY_END===
-                
+
                 ===MARKDOWN_START===
                 [Write a detailed markdown report analyzing the content based on the industry context]
                 ===MARKDOWN_END===
-                
-                Important: 
+
+                Important:
                 - Use the exact delimiters shown above
                 - Do not include any other formatting or text outside these sections
                 - Make the summary comprehensive but concise
-                - Make the markdown analysis detailed and industry-focused`;
+                - Make the markdown analysis detailed and industry-focused
+                - **VERBATIM QUOTES (critical):** For every key management statement, guidance figure, or important claim, include the exact verbatim quote from the transcript in *italics* inside double quotes, e.g. *"We expect revenue to grow 15-20% in FY26"* — followed by the speaker name if identifiable. Do NOT paraphrase management statements. Quote them directly from the source.`;
 
             const response = await this.claudeService.callClaudeAPIWithRetry(prompt);
             const parsedResponse = this.parseStructuredResponse(response);

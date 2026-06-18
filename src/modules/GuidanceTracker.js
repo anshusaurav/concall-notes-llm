@@ -26,12 +26,14 @@ class GuidanceTracker {
 
             console.log(`📞 Found ${conCallList.length} conference calls for ${docData.name}`);
 
-            // Filter conference calls that have markdownOutput
-            const processedCalls = conCallList.filter((call, index) =>
-                call.markdownOutput && call.markdownOutput.trim().length > 0 && index < 16
-            );
+            // Filter conference calls that have markdownOutput (no index cap — concalls are
+            // sorted newest-first, so processed calls may appear beyond index 16 when new
+            // unprocessed ones have been prepended).  Take the 16 most recent with output.
+            const processedCalls = conCallList
+                .filter(call => call.markdownOutput && call.markdownOutput.trim().length > 0)
+                .slice(0, 16);
 
-            //reverse processedCalls array
+            //reverse processedCalls array (put oldest first for chronological context)
             processedCalls.reverse();
 
             if (processedCalls.length === 0) {
@@ -81,9 +83,21 @@ class GuidanceTracker {
             const sortedCalls = this.sortConferenceCallsByDate(processedCalls);
 
             // Create the formatted input for the Gemini prompt
-            const formattedInput = this.formatMarkdownForTracker(sortedCalls);
+            let formattedInput = this.formatMarkdownForTracker(sortedCalls);
 
             console.log(`📋 Formatted input length: ${formattedInput.length} characters`);
+
+            // Cap input at 150K chars — drop oldest calls one at a time until we're under the limit
+            const MAX_INPUT_CHARS = 150000;
+            if (formattedInput.length > MAX_INPUT_CHARS) {
+                console.warn(`⚠️  Input too large (${formattedInput.length} chars > ${MAX_INPUT_CHARS} limit), trimming oldest calls...`);
+                let trimmedCalls = [...sortedCalls];
+                while (trimmedCalls.length > 1 && formattedInput.length > MAX_INPUT_CHARS) {
+                    trimmedCalls = trimmedCalls.slice(1); // drop oldest
+                    formattedInput = this.formatMarkdownForTracker(trimmedCalls);
+                }
+                console.log(`✂️  Trimmed to ${trimmedCalls.length} calls (${formattedInput.length} chars)`);
+            }
 
             // Generate the guidance tracker using Claude
             const trackerResult = await this.generateTrackerWithClaude(formattedInput);
@@ -225,7 +239,7 @@ class GuidanceTracker {
 
             4.  **Construct the Structured Historical Narrative:**
         *   For each commitment, populate the historical_tracker_and_evolution field. This field MUST be an **array of objects**.
-        *   Each object in the array represents an update from a specific period and MUST have two keys: 'period' (e.g., "Q4 FY25") and 'update' (a concise summary of the update with key data or quotes).
+        *   Each object in the array represents an update from a specific period and MUST have three keys: 'period' (e.g., "Q4 FY25"), 'update' (a concise summary of the update with key data), and 'source_quote' (the verbatim sentence or phrase from that period's summary that contains this update — copy it exactly as written).
         *   **Crucially, only include objects for periods where a relevant, meaningful update was provided.** Do not include entries for periods with no mention of the target.
             *   **Do NOT include an update from the same period in which the target was introduced.** The introduction details are captured in other fields.
 
@@ -254,10 +268,11 @@ class GuidanceTracker {
             8.  **Structure the Final JSON Output:**
         *   Present your findings as a single, well-formatted JSON object.
             *   The JSON should have a single key, 'guidance_tracker', whose value is an array of objects.
-            *   Each object in the array represents a tracked commitment and **must have exactly the following five fields**:
+            *   Each object in the array represents a tracked commitment and **must have exactly the following six fields**:
         *   'metric': A concise, **context-rich** name for the target.
             *   'original_target': The specific value, outcome, or milestone being aimed for.
         *   'origin_period': The period in which this specific target was first introduced.
+            *   'source_quote': The verbatim sentence or phrase from the origin period's summary that first introduced this commitment — copy it exactly as written.
             *   'historical_tracker_and_evolution': An array of objects, as described in instruction #4. If there are no subsequent updates, this should be an empty array [].
             *   'final_status': The final status tag, as described in instruction #5.
             *   Organize the commitment objects in the array chronologically based on their 'origin_period'.

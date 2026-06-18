@@ -176,3 +176,12 @@ tmp/
 # Build artifacts
 build/
 dist/
+
+# Generated batch runner scripts (created dynamically by run-by-year.js)
+build-batch*.js
+
+# Temporary data / output files
+output_*.json
+pending-concalls.json
+industry-prompts-dump.json
+tmp-concall/

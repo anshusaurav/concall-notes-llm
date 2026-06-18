@@ -4,6 +4,60 @@ class DocumentCleaner {
     }
 
     /**
+     * Deep-merges two insights tab objects ({ periods, rows }).
+     * For each row (matched by metric name), merges values at the period-key level,
+     * preferring non-null values from either source.
+     */
+    _mergeInsightsTab(base, incoming) {
+        const result = { ...base };
+
+        // Merge periods — union of unique labels
+        const periodLabels = new Set((base.periods || []).map(p => p.label));
+        (incoming.periods || []).forEach(p => {
+            if (!periodLabels.has(p.label)) {
+                periodLabels.add(p.label);
+                (result.periods = result.periods || []).push(p);
+            }
+        });
+
+        // Merge rows — match by metric name, deep-merge values
+        const rowMap = {};
+        (base.rows || []).forEach(r => { rowMap[r.metric] = { ...r, values: { ...(r.values || {}) } }; });
+        (incoming.rows || []).forEach(srcRow => {
+            if (!rowMap[srcRow.metric]) {
+                rowMap[srcRow.metric] = { ...srcRow };
+            } else {
+                const dest = rowMap[srcRow.metric];
+                for (const [period, val] of Object.entries(srcRow.values || {})) {
+                    const hasVal = val !== null && val !== undefined &&
+                        (typeof val === 'object' ? val.value !== null && val.value !== undefined : true);
+                    const destVal = dest.values[period];
+                    const destHasVal = destVal !== null && destVal !== undefined &&
+                        (typeof destVal === 'object' ? destVal.value !== null && destVal.value !== undefined : true);
+                    if (hasVal && !destHasVal) dest.values[period] = val;
+                }
+            }
+        });
+        result.rows = Object.values(rowMap);
+        return result;
+    }
+
+    /**
+     * Merges an array of insights objects into one, doing a deep value-level merge.
+     */
+    _mergeInsightsArray(insightsArray) {
+        const merged = {};
+        insightsArray.forEach(ins => {
+            if (!ins || typeof ins !== 'object') return;
+            for (const [tab, tabData] of Object.entries(ins)) {
+                if (!tabData) continue;
+                merged[tab] = merged[tab] ? this._mergeInsightsTab(merged[tab], tabData) : tabData;
+            }
+        });
+        return merged;
+    }
+
+    /**
      * Parses a quarter/period string into a comparable { year, month } object.
      * Handles:
      *   "Q4FY26" / "Q4 FY26"  — fiscal-year format (Q4 FY26 = Jan 2026)
@@ -297,17 +351,27 @@ class DocumentCleaner {
                         return best;
                     });
 
+                    // Merge insights from all docs (documents + rawDocuments) — deep value-level merge
+                    const mergedInsights = this._mergeInsightsArray(
+                        [...docsInCollection, ...rawDocs].map(doc => doc.data.insights)
+                    );
+
                     // Update the document to keep with merged data
                     // Using dot notation to only update specific nested fields without removing others
+                    const updateData = {
+                        'documents.Concalls': mergedConcalls,
+                        'documents.Announcements': mergedAnnouncements,
+                        lastProcessed: new Date().toISOString()
+                    };
+                    if (Object.keys(mergedInsights).length > 0) {
+                        updateData.insights = mergedInsights;
+                    }
+
                     batchOperations.push({
                         type: 'update',
                         collection: 'documents',
                         docId: docToKeep.id,
-                        data: {
-                            'documents.Concalls': mergedConcalls,
-                            'documents.Announcements': mergedAnnouncements,
-                            lastProcessed: new Date().toISOString()
-                        },
+                        data: updateData,
                         logInfo: {
                             docId: docToKeep.id,
                             companyName: docToKeep.data.name,
@@ -549,21 +613,32 @@ class DocumentCleaner {
                     }
                 });
 
-                // Prepare update operation for the document to keep with merged concalls and announcements
+                // Merge insights from all docs — deep value-level merge
+                const mergedInsights = this._mergeInsightsArray(
+                    documents.map(doc => doc.data.insights)
+                );
+
+                // Prepare update operation for the document to keep with merged concalls, announcements, and insights
                 if (allConcalls.size > 0 || allAnnouncements.size > 0) {
                     const mergedConcalls = this._sortConcallsByQuarter(Array.from(allConcalls.values()));
                     const mergedAnnouncements = Array.from(allAnnouncements.values());
 
+                    const updateData = {
+                        documents: {
+                            ...docToKeep.data.documents,
+                            'Concalls': mergedConcalls,
+                            'Announcements': mergedAnnouncements
+                        }
+                    };
+
+                    if (Object.keys(mergedInsights).length > 0) {
+                        updateData.insights = mergedInsights;
+                    }
+
                     batchOperations.push({
                         type: 'update',
                         docId: docToKeep.id,
-                        data: {
-                            documents: {
-                                ...docToKeep.data.documents,
-                                'Concalls': mergedConcalls,
-                                'Announcements': mergedAnnouncements
-                            }
-                        },
+                        data: updateData,
                         logInfo: {
                             docId: docToKeep.id,
                             concallsCount: mergedConcalls.length,

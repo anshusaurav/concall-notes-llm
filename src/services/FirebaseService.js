@@ -153,13 +153,40 @@ class FirebaseService {
     }
 
     async getAllDocuments() {
-        const snapshot = await this.db.collection(this.collectionName).get();
-        return snapshot;
+        return this._getAllDocumentsPaginated(this.collectionName);
     }
 
     async getAllRawDocuments() {
-        const snapshot = await this.db.collection('rawDocuments').get();
-        return snapshot;
+        return this._getAllDocumentsPaginated('rawDocuments');
+    }
+
+    async _getAllDocumentsPaginated(collectionName, pageSize = 500) {
+        const allDocs = [];
+        let lastDoc = null;
+        let page = 0;
+
+        while (true) {
+            let query = this.db.collection(collectionName).orderBy('__name__').limit(pageSize);
+            if (lastDoc) query = query.startAfter(lastDoc);
+
+            const snap = await query.get();
+            if (snap.empty) break;
+
+            snap.docs.forEach(d => allDocs.push(d));
+            lastDoc = snap.docs[snap.docs.length - 1];
+            page++;
+            console.log(`  📄 [${collectionName}] Fetched page ${page} (${allDocs.length} docs so far)`);
+
+            if (snap.docs.length < pageSize) break;
+        }
+
+        // Return a snapshot-like object compatible with existing code
+        return {
+            size: allDocs.length,
+            empty: allDocs.length === 0,
+            docs: allDocs,
+            forEach: (fn) => allDocs.forEach(fn)
+        };
     }
 
     async deleteRawDocument(docId) {
