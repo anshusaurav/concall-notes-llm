@@ -169,7 +169,19 @@ class FirebaseService {
             let query = this.db.collection(collectionName).orderBy('__name__').limit(pageSize);
             if (lastDoc) query = query.startAfter(lastDoc);
 
-            const snap = await query.get();
+            let snap;
+            for (let attempt = 1; attempt <= 4; attempt++) {
+                try {
+                    snap = await query.get();
+                    break;
+                } catch (err) {
+                    if (attempt === 4) throw err;
+                    const wait = attempt * 2000;
+                    console.log(`  ⚠️  [${collectionName}] page ${page + 1} attempt ${attempt} failed (${err.message}) — retrying in ${wait / 1000}s`);
+                    await new Promise(r => setTimeout(r, wait));
+                }
+            }
+
             if (snap.empty) break;
 
             snap.docs.forEach(d => allDocs.push(d));
